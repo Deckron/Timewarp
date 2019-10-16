@@ -10,7 +10,12 @@ public class mech_boss_control : MonoBehaviour
 
     private Animator anim;
     public float lookRadius = 10f;
+    public GameObject firepoint;
+    public GameObject grenade;
     Transform target;
+    public Transform spawnloc;
+    public Rigidbody grenade1;
+    
     NavMeshAgent agent;
     public bool isClose = false;
     
@@ -19,7 +24,8 @@ public class mech_boss_control : MonoBehaviour
         target = player_manager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
         anim = gameObject.GetComponent<Animator>();
-        
+        spawnloc = firepoint.transform;
+
 
     }
 
@@ -31,6 +37,9 @@ public class mech_boss_control : MonoBehaviour
             isClose = true;
             agent.SetDestination(target.position);
             anim.SetBool("isClose", true);
+            Rigidbody clone;
+            clone = Instantiate(grenade1, spawnloc.position, spawnloc.rotation);
+            clone.velocity = spawnloc.TransformDirection(Vector3.forward * 10);
         }
         else
         {
