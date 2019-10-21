@@ -38,7 +38,7 @@ public class mech_boss_control : MonoBehaviour
             agent.SetDestination(target.position);
             anim.SetBool("isClose", true);
             Rigidbody clone;
-            clone = Instantiate(grenade1, spawnloc.position, spawnloc.rotation);
+            clone = Instantiate(grenade1, firepoint.transform.position, spawnloc.rotation);
             clone.velocity = spawnloc.TransformDirection(Vector3.forward * 10);
         }
         else

@@ -10,6 +10,7 @@ public class player_manager : MonoBehaviour
     public void SavePlayer()
     {
         save_system.savePlayer(this);
+
     }
 
     public void LoadPlayer()
@@ -34,4 +35,9 @@ public class player_manager : MonoBehaviour
     #endregion
 
     public GameObject player;
+
+    private void Start()
+    {
+         
+    }
 }
