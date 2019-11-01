@@ -14,6 +14,7 @@ public class cube : MonoBehaviour
         Debug.Log("destroyed");
         if (col.gameObject.tag == "Player")
         {
+            Debug.Log("destroyed");
             isDestroyed = true;
             Destroy(gameObject);
         }

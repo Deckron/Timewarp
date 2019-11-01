@@ -1,34 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalControl : MonoBehaviour
 {
-    public static GlobalControl Instance;
+    public static GlobalControl Instance 
+    {
+        get
+        {
+            return _instance;
+        }
+    }
+    private static GlobalControl _instance;
     public int health = 10;
-    Vector3 position;
-    
+
 
     private void Awake()
     {
-        if (Instance == null)
+        if (_instance == null)
         {
             DontDestroyOnLoad(gameObject);
-            Instance = this;
+            _instance = this;
         }
-        else if(Instance != this)
+        else if(_instance != this)
         {
             Destroy(gameObject);
         }
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

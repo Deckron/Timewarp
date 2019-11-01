@@ -88,6 +88,7 @@
     <Compile Include="Assets\scripts\minimap.cs" />
     <Compile Include="Assets\scripts\player_data.cs" />
     <Compile Include="Assets\scripts\player_manager.cs" />
+    <Compile Include="Assets\scripts\ranger_boss.cs" />
     <Compile Include="Assets\scripts\save_system.cs" />
     <Compile Include="Assets\scripts\sceneToMenu.cs" />
     <Compile Include="Assets\scripts\spawn_projectile.cs" />
@@ -95,15 +96,18 @@
     <None Include="Assets\fmod\fmod_proj\Metadata\Tags.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Return\{7f8d5c17-b55e-4768-9387-e8e18fe82304}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Platform\{21c6c014-91d2-4c68-a11b-0e455a756b7f}.xml" />
+    <None Include="Assets\fmod\fmod_proj\Metadata\Event\{720d30ad-c96c-4d08-955b-5e5541694162}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\EffectPresetFolder\{69fa0ffc-f05b-4e66-b95d-a2a4453f46fc}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\ParameterPresetFolder\{2168b562-a510-4801-a781-ecc2e4f6107e}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Master.xml" />
+    <None Include="Assets\fmod\fmod_proj\Metadata\AudioFile\{615f5975-ddda-48ce-8d59-f3e5fd90facc}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\BankFolder\{4cfe28c2-90e6-4eaf-a415-bd82bad2c962}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Asset\{f6653d2b-3dba-45e3-a5ea-c53cdcd11064}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\SnapshotGroup\{053baf7c-7a5c-479f-b6cd-ec9a2b1f20a9}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\EncodingSetting\{f0726978-d46e-43bd-b467-9078c483233b}.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Workspace.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\EventFolder\{293d76e2-fd5c-4046-ab2b-d9724dc15ae7}.xml" />
+    <None Include="Assets\readme.txt" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Bank\{bb577d12-3546-467b-a215-452b0a185abc}.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/unity projects/timewarp/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -11,7 +11,7 @@ public static class save_system
         string path = Application.persistentDataPath + "/player.txt";
         FileStream stream = new FileStream(path, FileMode.Create);
         player_data data = new player_data(player);
-
+        Debug.Log("saved");
         formatter.Serialize(stream, data);
         stream.Close();
     }
@@ -25,7 +25,7 @@ public static class save_system
             FileStream stream = new FileStream(path, FileMode.Open);
 
             player_data data =formatter.Deserialize(stream) as player_data;
-
+            Debug.Log("loaded");
             stream.Close();
 
             return data;

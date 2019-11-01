@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{615f5975-ddda-48ce-8d59-f3e5fd90facc}">
+		<property name="assetPath">
+			<value>07 - The Road of Trials.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>256.86204081632656</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f6653d2b-3dba-45e3-a5ea-c53cdcd11064}</destination>
+		</relationship>
+	</object>
+</objects>

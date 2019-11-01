@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class mech_boss_control : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public bool isDestroyed = false;
     private Animator anim;
     public float lookRadius = 10f;
     public GameObject firepoint;
@@ -24,7 +24,7 @@ public class mech_boss_control : MonoBehaviour
         target = player_manager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
         anim = gameObject.GetComponent<Animator>();
-        spawnloc = firepoint.transform;
+        //spawnloc = firepoint.transform;
 
 
     }
@@ -50,5 +50,17 @@ public class mech_boss_control : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        if(other.gameObject.tag == "Player")
+        {
+            
+            isDestroyed = true;
+            Destroy(gameObject);
+        }
+        
     }
 }
