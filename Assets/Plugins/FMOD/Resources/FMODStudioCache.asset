@@ -33,7 +33,7 @@ MonoBehaviour:
   Path: event:/droning sounds
   guid: ad300d726cc9084d955b5e5541694162
   Banks:
-  - {fileID: -9184248540415572190}
+  - {fileID: -2134117244063591708}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/fmod/fmod_proj/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637078870416697237
+  lastModified: 637078906420000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -79,6 +79,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-2134117244063591708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/fmod_proj/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637078906420000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,15 +111,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -8146781200698789306}
-  - {fileID: -9184248540415572190}
+  - {fileID: -2134117244063591708}
   EditorEvents:
   - {fileID: -9051522346731053220}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -9184248540415572190}
+  - {fileID: -2134117244063591708}
   StringsBanks:
   - {fileID: -8146781200698789306}
-  stringsBankWriteTime: 637078870416697237
+  stringsBankWriteTime: 637078906420000000
   cacheVersion: 3
 --- !u!114 &3644863616916939425
 MonoBehaviour:

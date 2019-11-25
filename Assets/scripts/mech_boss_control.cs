@@ -17,7 +17,10 @@ public class mech_boss_control : MonoBehaviour
     public Rigidbody grenade1;
     
     NavMeshAgent agent;
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
     public bool isClose = false;
+    public float count = 0f;
     
     void Start()
     {
@@ -31,21 +34,54 @@ public class mech_boss_control : MonoBehaviour
 
     void Update()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
-        if (distance <= lookRadius)
+        if (count <= 1f)
         {
-            isClose = true;
-            agent.SetDestination(target.position);
-            anim.SetBool("isClose", true);
-            Rigidbody clone;
-            clone = Instantiate(grenade1, firepoint.transform.position, spawnloc.rotation);
-            clone.velocity = spawnloc.TransformDirection(Vector3.forward * 10);
+            count += Time.deltaTime;
         }
-        else
+        else if (count > 1f)
         {
-            anim.SetBool("isClose", false);
+            count = 0f;
+            float distance = Vector3.Distance(target.position, transform.position);
+            if (distance <= lookRadius)
+            {
+                Shoot();
+            }
+            else
+            {
+                anim.SetBool("isClose", false);
+            }
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
+            fireCountdown -= Time.deltaTime;
         }
+        
+
+
+
+
     }
+
+    void Shoot()
+    {
+        isClose = true;
+        agent.SetDestination(target.position);
+        anim.SetBool("isClose", true);
+
+        GameObject BulletGo = (GameObject)Instantiate(grenade, firepoint.transform.position, spawnloc.rotation);
+        bullet bullet = BulletGo.GetComponent<bullet>();
+        
+        if (bullet != null)
+        {
+            bullet.Seek(target);
+        }
+
+        //clone.velocity = spawnloc.TransformDirection(Vector3.forward * 10);
+        
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

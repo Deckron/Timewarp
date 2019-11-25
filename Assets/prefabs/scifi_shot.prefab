@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 968134677478044422}
   - component: {fileID: 955354106372619362}
   - component: {fileID: -3527837111219748135}
+  - component: {fileID: 8703866393105168655}
   m_Layer: 0
   m_Name: scifi_shot
   m_TagString: Untagged
@@ -95,3 +96,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8703866393105168655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942625677980097460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa163bea05abcb04899f3fc838007a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 70
+  impactEffect: {fileID: 8215391584308540935, guid: daa0767b3763f92458726b59df105c6a,
+    type: 3}
