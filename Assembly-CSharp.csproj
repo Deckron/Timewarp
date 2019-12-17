@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\addAudio.cs" />
     <Compile Include="Assets\Scripts\audio_manager.cs" />
     <Compile Include="Assets\Scripts\audio_player.cs" />
+    <Compile Include="Assets\Scripts\audioMan.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
     <Compile Include="Assets\Scripts\cube.cs" />
     <Compile Include="Assets\Scripts\displacementControl.cs" />

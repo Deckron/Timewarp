@@ -7,13 +7,19 @@ public class addAudio : MonoBehaviour
 {
     
     public GameObject trigger;
-    public static GameObject spawnloc;
-    public static Transform rot;
+    //public GameObject trigger = Instantiate(audiotrigger1) as GameObject;
+    public GameObject spawnloc;
+    public Transform rot;
     // Start is called before the first frame update
-    void Start()
+    #region Singleton
+    public static addAudio Instance { get; private set; }
+    private void Awake()
     {
-        
+        Instance = this;
     }
+
+
+    #endregion
 
     // Update is called once per frame
     void Update()
@@ -26,15 +32,18 @@ public class addAudio : MonoBehaviour
     [MenuItem("MyMenu/Do Something with a Shortcut Key %g")]
     static void DoSomethingWithAShortcutKey()
     {
-        public static GameObject useTrig = trigger;
+
         Debug.Log("Doing something with a Shortcut Key...");
         //public GameObject trigger = Instantiate(audiotrigger1) as GameObject;
 
-        Instantiate(trigger, spawnloc.transform.position, rot.rotation);
+        addAudio.Instance.spawnItem();
+
     }
 
     void spawnItem()
     {
-        
+        GameObject a = Instantiate(trigger) as GameObject;
+        a.transform.position = new Vector3(spawnloc.transform.position.x, spawnloc.transform.position.y, spawnloc.transform.position.z);
+        //GameObject newT = (GameObject)Instantiate(trigger, spawnloc.transform.position, rot.rotation);
     }
 }
