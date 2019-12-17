@@ -11,7 +11,7 @@ public class cube : MonoBehaviour
     }
     public void OnTriggerEnter(Collider col)
     {
-        Debug.Log("destroyed");
+        //Debug.Log("destroyed");
         if (col.gameObject.tag == "Player")
         {
             Debug.Log("destroyed");

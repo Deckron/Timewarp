@@ -91,9 +91,9 @@ public class mech_boss_control : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.CompareTag("Player"))
         {
-            
+            Debug.Log("hit robot");
             isDestroyed = true;
             Destroy(gameObject);
         }

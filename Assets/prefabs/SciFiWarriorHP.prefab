@@ -371,7 +371,9 @@ MonoBehaviour:
   spawnloc: {fileID: 8916956099394587116}
   grenade1: {fileID: -3527837111219748135, guid: be5c5002ed12db3488b97a4455c4e532,
     type: 3}
+  fireRate: 1
   isClose: 0
+  count: 0
 --- !u!195 &8912085078641476478
 NavMeshAgent:
   m_ObjectHideFlags: 0
