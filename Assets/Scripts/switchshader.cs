@@ -6,6 +6,7 @@ public class switchshader : MonoBehaviour
 {
     Shader shader1;
     Shader shader2;
+    Shader shader3;
     Renderer rend;
     public cube cube;
     // Start is called before the first frame update

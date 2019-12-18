@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\spawn_projectile.cs" />
     <Compile Include="Assets\Scripts\switchshader.cs" />
+    <Compile Include="Assets\Scripts\wallDest.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Mixer.xml" />
     <None Include="Assets\fmod\fmod_proj\Metadata\Tags.xml" />
