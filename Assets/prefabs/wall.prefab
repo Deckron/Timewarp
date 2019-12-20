@@ -61,7 +61,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0311cbb0184a51845912c30ec478cb8e, type: 2}
-  - {fileID: 2100000, guid: 2ab988d0e4c82c74e9c6c07c2a92059a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,6 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
 --- !u!114 &5132446305021874896
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -88,6 +88,8 @@
     <Compile Include="Assets\Scripts\GlobalControl.cs" />
     <Compile Include="Assets\Scripts\interactable.cs" />
     <Compile Include="Assets\Scripts\item_pickup.cs" />
+    <Compile Include="Assets\Scripts\level1portal.cs" />
+    <Compile Include="Assets\Scripts\level2Portal.cs" />
     <Compile Include="Assets\Scripts\mech_boss_control.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\menuToScene.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\Scripts\nar_window.cs" />
     <Compile Include="Assets\Scripts\player_data.cs" />
     <Compile Include="Assets\Scripts\player_manager.cs" />
+    <Compile Include="Assets\Scripts\portalScript.cs" />
     <Compile Include="Assets\Scripts\ranger_boss.cs" />
     <Compile Include="Assets\Scripts\save_system.cs" />
     <Compile Include="Assets\Scripts\sceneToMenu.cs" />

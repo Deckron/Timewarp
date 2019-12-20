@@ -7,7 +7,7 @@ public class cube : MonoBehaviour
     public bool isDestroyed = false;
     private void Start()
     {
-        Debug.Log("cube script");
+        
     }
     public void OnTriggerEnter(Collider col)
     {

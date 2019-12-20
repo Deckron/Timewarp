@@ -6,11 +6,13 @@ public class displacementControl : MonoBehaviour
 {
     public float dis_Amount;
     public cube cube;
-    //public ParticleSystem plosion;
+    //public bool testBool;
+   // public ParticleSystem plosion;
     MeshRenderer Render;
     void Start()
     {
         Render = GetComponent<MeshRenderer>();
+        //testBool=false;
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class displacementControl : MonoBehaviour
         
         Render.material.SetFloat("_amount", dis_Amount);
         //if (Input.GetButtonDown("Jump"))
+        //if (testBool==true)
         if (cube.isDestroyed)
         {
             dis_Amount = .8f;
@@ -27,6 +30,7 @@ public class displacementControl : MonoBehaviour
 
         }
     }
+    
     
     private void OnCollisionEnter(Collision collision)
     {
