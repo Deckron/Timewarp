@@ -11,7 +11,7 @@ public class audio_manager : MonoBehaviour
     public float volume = 1;
     AudioSource audio;
     public bool alreadyPlayed = false;
-    public cube Cube;
+    public cube enemy;
     public GameObject textBox1;
     public GameObject textBox2;
     private float time = 0f;
@@ -25,7 +25,7 @@ public class audio_manager : MonoBehaviour
     {
         if (!alreadyPlayed) 
         {
-            if (!Cube.isDestroyed)
+            if (!enemy.isDestroyed)
             {
                 Debug.Log("play1");
                 audio.PlayOneShot(clip1, volume);

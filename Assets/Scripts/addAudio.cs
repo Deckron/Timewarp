@@ -19,6 +19,8 @@ public class addAudio : MonoBehaviour
     }
 
 
+
+
     #endregion
 
     // Update is called once per frame
@@ -35,8 +37,8 @@ public class addAudio : MonoBehaviour
 
         Debug.Log("Doing something with a Shortcut Key...");
         //public GameObject trigger = Instantiate(audiotrigger1) as GameObject;
-
-        addAudio.Instance.spawnItem();
+        getAudio.Instance.spawnItem();
+        
 
     }
 

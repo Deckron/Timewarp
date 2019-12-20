@@ -7,7 +7,8 @@ public class level1portal : MonoBehaviour
 {
     public cube mac;
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision col)
+    
+    void OnTriggerEnter(Collider col)
     {
         if (mac.isDestroyed)
         {
